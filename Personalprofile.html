@@ -1,0 +1,106 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <title>Userprofile</title>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Personalprofile.css" type="text/css" />
+
+</head>
+
+<body>
+
+    <iframe src="Topnavigationmenu.html" width="100%" height="80px" frameborder="0"></iframe>
+
+    <div class="segments">
+        <div class="personaldetails">
+            <h2>User Personal Details:</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+
+                <button type="button" onclick="saveChanges()">Save Changes</button>
+            </form>
+
+        </div>
+
+        <div class="linkedaccounts">
+            <h2>Linked Accounts</h2>
+            <div class="linked-accounts-container">
+                <div class="linked-account">
+                    <img src="profile-image.png" alt="User1">
+                    <p>@User1</p>
+                </div>
+                <div class="linked-account">
+                    <img src="profile-image.png" alt="User2">
+                    <p>@User2</p>
+                </div>
+                <div class="linked-account">
+                    <img src="profile-image.png" alt="User3">
+                    <p>@User3</p>
+                </div>
+                <div class="linked-account">
+                    <img src="profile-image.png" alt="User4">
+                    <p>@User4</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="listofSavedCountries">
+            <h2>Saved Countries</h2>
+            <ul class="country-list">
+                <li>Country 1 <button class="delete-button">Delete</button></li>
+                <li>Country 2 <button class="delete-button">Delete</button></li>
+                <li>Country 3 <button class="delete-button">Delete</button></li>
+                <li>Country 4 <button class="delete-button">Delete</button></li>
+                <li>Country 5 <button class="delete-button">Delete</button></li>
+
+            </ul>
+
+        </div>
+
+        <div class="notificationcentre">
+            <h2>Notification Centre</h2>
+            <ul class="notification-list">
+                <li>
+                    Notification 1
+                    <button class="delete-button">Delete</button>
+                    <button class="open-button" onclick="openPopup('Notification 1')">Open</button>
+                </li>
+                <li>
+                    Notification 2
+                    <button class="delete-button">Delete</button>
+                    <button class="open-button" onclick="openPopup('Notification 2')">Open</button>
+                </li>
+
+            </ul>
+            <button class="delete-selected-button">Delete Selected</button>
+        </div>
+
+
+    </div>
+
+    <script>
+        function saveChanges() {
+
+            alert("Changes saved successfully!");
+        }
+        function openPopup(notification) {
+
+            alert('Opening pop-up for: ' + notification);
+        }
+
+    </script>
+</body>
+
+</html>

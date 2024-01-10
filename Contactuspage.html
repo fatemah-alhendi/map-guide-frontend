@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <iframe src="Topnavigationmenu.html" width="100%" height="80px" frameborder="0"></iframe>
+
+    <div class="container">
+        <!-- Project Information Box -->
+        <div class="project-info-box">
+            <!-- Project Information -->
+            <div class="project-info">
+                <p>City Univeristy of London</p>
+                <hr>
+                <p>Project: Intelligent Tourism Guide Masters Project </p>
+                <hr>
+                <p>Course: Software Engineering With Cloud Computing</p>
+                <hr>
+                <p>Supervisor: Lorenzo S</p>
+                <hr>
+                <p>Student: Fatemah ALHendi</p>
+                <hr>
+                <p>Student Email: Fatemah.alhendi@city.ac.uk</p>
+                <hr>
+                <p>January 2024</p>
+                
+            </div>
+        </div>
+
+        <!-- Diagonal lines pattern container -->
+        <div class="pattern-container"></div>
+    </div>
+
+    <style>
+        * {
+            background-color: #F2EDE7;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Lucida Console", "Courier New", monospace;
+        }
+
+        .container {
+            margin-top: 30px;
+            margin-left: 65px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            width: 90%;
+            background-color: #DFD6C7;
+            border: 3px solid #444945;
+            border-radius: 5px;
+            color: black;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            overflow: hidden; 
+        }
+
+        .project-info-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #DFD6C7; 
+            border: 3px solid #444945;
+            border-radius: 10px;
+            padding: 30px; 
+            z-index: 2; 
+        }
+
+        .pattern-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(-45deg,
+                    transparent,
+                    transparent 6px,
+                    black 2px,
+                    black 8px);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .project-info {
+            margin: 20px; 
+        }
+
+        hr {
+            margin: 10px 0; 
+            border: none;
+            border-top: 1px solid #444945; 
+        }
+    </style>
+</body>
+
+</html>
+
+
